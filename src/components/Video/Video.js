@@ -5,19 +5,19 @@ import './Video.css'
 
 const cnVideo = cn('Video');
 
-export default class Video extends React.Component {
+export class Video extends React.Component {
     render() {
         return (
             <div className={cnVideo()}>
-                <video id={`video-${this.props.number}`} muted autoplay></video>
+                <video id={`video-${this.props.number}`} muted autoPlay></video>
                 <div className={cnVideo('Controls')}>
                     <div className={cnVideo('Controls_range')}>
                         <label>Яркость: </label>
-                        <input type="range" class="video-bright" min="0" max="200" />
+                        <input type="range" className="video-bright" min="0" max="200" />
                     </div>
                     <div className={cnVideo('Controls_range')}>
                         <label>Контрастность: </label>
-                        <input type="range" class="video-contrast" min="0" max="200" />
+                        <input type="range" className="video-contrast" min="0" max="200" />
                     </div>
                     <div className={cnVideo('Volume')}>
                         <div className={cnVideo('Volume_line')}></div>
