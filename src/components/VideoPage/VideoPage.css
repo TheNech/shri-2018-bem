@@ -7,3 +7,14 @@
 .VideoPage-Header {
     border-bottom: 1px solid #F0F0F0;
 }
+
+.VideoPage-Main {
+    padding: 15px 5%;
+}
+
+.VideoContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 28px;
+}

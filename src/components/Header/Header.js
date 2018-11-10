@@ -19,11 +19,11 @@ export class Header extends React.Component {
                 <div className={cnHeader('Menu')}>
                     <nav className={cnNav()}>
                         <ul>
-                            <li><Link className={cnNav('Item')}>События</Link></li>
-                            <li><Link className={cnNav('Item')}>Сводка</Link></li>
-                            <li><Link className={cnNav('Item')}>Устройства</Link></li>
-                            <li><Link className={cnNav('Item')}>Сценарии</Link></li>
-                            <li><Link className={cnNav('Item', {isActive: true})}>Видеонаблюдение</Link></li>
+                            <li><Link className={cnNav('Item')} url='#'>События</Link></li>
+                            <li><Link className={cnNav('Item')} url='#'>Сводка</Link></li>
+                            <li><Link className={cnNav('Item')} url='#'>Устройства</Link></li>
+                            <li><Link className={cnNav('Item')} url='#'>Сценарии</Link></li>
+                            <li><Link className={cnNav('Item', {isActive: true})} url='#'>Видеонаблюдение</Link></li>
                         </ul>
                     </nav>
                 </div>
