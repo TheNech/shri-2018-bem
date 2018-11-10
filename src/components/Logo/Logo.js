@@ -5,6 +5,6 @@ import './Logo.css';
 
 const cnLogo = cn('Logo');
 
-export const Link = props => (
+export const Logo = props => (
     <div className={cnLogo()} />
 );

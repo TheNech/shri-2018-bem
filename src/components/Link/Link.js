@@ -4,5 +4,5 @@ import { cn } from '@bem-react/classname';
 const cnLink = cn('Link');
 
 export const Link = props => (
-    <a className={cnLink()} href={props.url}>{props.children}</a>
+    <a className={cnLink(null, [props.className])} href={props.url}>{props.children}</a>
 );

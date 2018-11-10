@@ -1,0 +1,41 @@
+.Header {
+    width: 100%;
+    display: flex;
+}
+
+.Header-Logo {
+    margin-top: 32px;
+    margin-bottom: 33px;
+    margin-left: 3%;
+}
+
+.Header-Menu *:focus,.Header-Menu *::before,.Header-Menu *::after {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: content-box;
+}
+.Header-Menu {
+    margin-left: 1.5%;
+}
+.Header-Menu ul {
+  margin-top: 36px;
+}
+.Header-Menu li {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 27px;
+    display: inline-block;
+    cursor: pointer;
+}
+.Header-Menu  li:first-child {
+    margin-left: 0;
+}
+.Nav-Item {
+    text-decoration: none;
+    color: #858585;
+    display: block;
+}
+.Nav-Item_isActive {
+    color: #333333;
+}

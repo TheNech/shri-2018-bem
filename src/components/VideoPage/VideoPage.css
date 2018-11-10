@@ -1,0 +1,9 @@
+.VideoPage {
+    min-height: 100%;
+    font-family: Arial;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.VideoPage-Header {
+    border-bottom: 1px solid #F0F0F0;
+}

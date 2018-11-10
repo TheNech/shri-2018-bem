@@ -9,21 +9,21 @@ import { Logo } from '../Logo/Logo';
 const cnHeader = cn('Header');
 const cnNav = cn('Nav');
 
-class Header extends React.Component {
+export class Header extends React.Component {
     render() {
         return (
-            <div className={cnHeader()}>
+            <div className={cnHeader(null, [this.props.className])}>
                 <div className={cnHeader('Logo')}>
                     <Link url='#'><Logo /></Link>
                 </div>
                 <div className={cnHeader('Menu')}>
-                    <nav classname={cnNav()}>
+                    <nav className={cnNav()}>
                         <ul>
-                            <li><Link classname={cnNav('Item')}>События</Link></li>
-                            <li><Link classname={cnNav('Item')}>Сводка</Link></li>
-                            <li><Link classname={cnNav('Item')}>Устройства</Link></li>
-                            <li><Link classname={cnNav('Item')}>Сценарии</Link></li>
-                            <li><Link classname={cnNav('Item', {isActive: true})}>Видеонаблюдение</Link></li>
+                            <li><Link className={cnNav('Item')}>События</Link></li>
+                            <li><Link className={cnNav('Item')}>Сводка</Link></li>
+                            <li><Link className={cnNav('Item')}>Устройства</Link></li>
+                            <li><Link className={cnNav('Item')}>Сценарии</Link></li>
+                            <li><Link className={cnNav('Item', {isActive: true})}>Видеонаблюдение</Link></li>
                         </ul>
                     </nav>
                 </div>
@@ -31,5 +31,3 @@ class Header extends React.Component {
         );
     }
 }
-
-export default Header;
