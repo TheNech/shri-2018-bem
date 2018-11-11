@@ -1,0 +1,14 @@
+.Video video {
+    width: 100%;
+    height: 180px;
+}
+.Video_full .Video-Controls {
+    grid-template-columns: repeat(1, min-content);
+    grid-gap: 10px;
+}
+.Video-Volume {
+    overflow-x: hidden;
+    width: 250px;
+    border: 1px#000000 solid ;
+    height: 15px;
+}
