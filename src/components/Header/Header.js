@@ -6,7 +6,7 @@ import './Header.css';
 import { Link } from '../Link/Link';
 import { Logo } from '../Logo/Logo';
 
-const cnHeader = cn('Header');
+export const cnHeader = cn('Header');
 const cnNav = cn('Nav');
 
 export class Header extends React.Component {

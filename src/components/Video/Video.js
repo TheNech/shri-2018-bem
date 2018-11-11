@@ -3,7 +3,7 @@ import { cn } from '@bem-react/classname';
 
 import './Video.css'
 
-const cnVideo = cn('Video');
+export const cnVideo = cn('Video');
 
 export class Video extends React.Component {
     render() {
