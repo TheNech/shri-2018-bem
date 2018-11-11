@@ -13,11 +13,11 @@ export class Video extends React.Component {
                 <div className={cnVideo('Controls')}>
                     <div className={cnVideo('Controls_range')}>
                         <label>Яркость: </label>
-                        <input type="range" className="video-bright" min="0" max="200" />
+                        <input type='range' className='video-bright' min='0' max='200' defaultValue='100' />
                     </div>
                     <div className={cnVideo('Controls_range')}>
                         <label>Контрастность: </label>
-                        <input type="range" className="video-contrast" min="0" max="200" />
+                        <input type='range' className='video-contrast' min='0' max='200' defaultValue='100' />
                     </div>
                     <div className={cnVideo('Volume')}>
                         <div className={cnVideo('Volume_line')}></div>
