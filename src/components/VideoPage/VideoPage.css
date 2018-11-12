@@ -1,8 +1,8 @@
 .VideoPage {
-    min-height: 100%;
+    min-height: 100vh;
     font-family: Arial;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 97px 1fr 63px;
 }
 .VideoPage-Header {
     border-bottom: 1px solid #F0F0F0;
@@ -10,7 +10,6 @@
 
 .VideoPage-Main {
     padding: 15px 5%;
-    height: 100%;
 }
 
 .VideoContainer {

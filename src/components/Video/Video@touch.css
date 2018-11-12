@@ -2,6 +2,9 @@
     width: 100%;
     height: 180px;
 }
+.Video_full video{
+    height: 100%;
+}
 .Video_full .Video-Controls {
     grid-template-columns: repeat(1, min-content);
     grid-gap: 10px;

@@ -7,6 +7,7 @@ import './VideoPage.css'
 
 import { cnHeader } from '../Header/Header';
 import { cnVideo } from '../Video/Video'
+import { Footer } from '../Footer/Footer';
 
 const cnVideoPage = cn('VideoPage');
 const cnVideoContainer = cn('VideoContainer');
@@ -31,6 +32,7 @@ export default class VideoPage extends React.Component {
                                     <Video number={4}/>
                                 </div>
                             </div>
+                            <Footer className={cnVideoPage('Footer')}/>
                         </div>
                     );
                 }}
@@ -100,6 +102,7 @@ export default class VideoPage extends React.Component {
                 const mainBlock = document.querySelector('.VideoPage-Main');
                 const mainBlockStyle = getComputedStyle(mainBlock, null);
                 const mainHeight = parseInt(mainBlockStyle.getPropertyValue('height'));
+                console.log('Main height:', mainHeight);
 
                 const parrent = e.target.parentElement;
                 

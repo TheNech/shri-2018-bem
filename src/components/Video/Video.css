@@ -10,9 +10,6 @@
     grid-row-gap: 10px;
     z-index: 100;
 }
-.Video_full video{
-    height: 100%;
-}
 .Video_full .Video-Controls {
     display: grid;
     grid-template-columns: repeat(3, min-content);

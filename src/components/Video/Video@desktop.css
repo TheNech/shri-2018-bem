@@ -2,6 +2,9 @@
     width: 100%;
     height: 200px;
 }
+.Video_full video{
+    height: 100%;
+}
 .Video-Controls {
     display: none;
 }
