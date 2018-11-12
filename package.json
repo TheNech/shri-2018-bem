@@ -5,6 +5,7 @@
   "dependencies": {
     "@bem-react/classname": "^1.1.1",
     "@bem-react/di": "^1.0.3",
+    "current-device": "^0.7.8",
     "hls.js": "^0.11.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",

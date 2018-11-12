@@ -13,28 +13,29 @@ const cnVideoContainer = cn('VideoContainer');
 
 export default class VideoPage extends React.Component {
     render() {
-        <RegistryConsumer>
-            {registries => {
-                const platform = registries['platform'];
-                const Header = platform.get(cnHeader());
-                const Video = platform.get(cnVideo());
-
-                
-                return(
-                    <div className={cnVideoPage()}>
-                        <Header className={cnVideoPage('Header')}/>
-                        <div className={cnVideoPage('Main')}>
-                            <div className={cnVideoContainer()}>
-                                <Video number={1}/>
-                                <Video number={2}/>
-                                <Video number={3}/>
-                                <Video number={4}/>
+        return (
+            <RegistryConsumer>
+                {registries => {
+                    const platform = registries['platform'];
+                    const Header = platform.get(cnHeader());
+                    const Video = platform.get(cnVideo());
+                    
+                    return(
+                        <div className={cnVideoPage()}>
+                            <Header className={cnVideoPage('Header')}/>
+                            <div className={cnVideoPage('Main')}>
+                                <div className={cnVideoContainer()}>
+                                    <Video number={1}/>
+                                    <Video number={2}/>
+                                    <Video number={3}/>
+                                    <Video number={4}/>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                );
-            }}
-        </RegistryConsumer>
+                    );
+                }}
+            </RegistryConsumer>
+        );
     }
 
     componentDidMount() {
