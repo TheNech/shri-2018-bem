@@ -6,11 +6,10 @@ import Hls from 'hls.js';
 import './VideoPage.css'
 
 import { cnHeader } from '../Header/Header';
-import { cnVideo } from '../Video/Video'
+import { cnContainer } from './Container/Container';
 import { Footer } from '../Footer/Footer';
 
 const cnVideoPage = cn('VideoPage');
-const cnVideoContainer = cn('VideoContainer');
 
 export default class VideoPage extends React.Component {
     render() {
@@ -19,18 +18,13 @@ export default class VideoPage extends React.Component {
                 {registries => {
                     const platform = registries['platform'];
                     const Header = platform.get(cnHeader());
-                    const Video = platform.get(cnVideo());
+                    const Container = platform.get(cnContainer());
                     
                     return(
                         <div className={cnVideoPage()}>
                             <Header className={cnVideoPage('Header')}/>
                             <div className={cnVideoPage('Main')}>
-                                <div className={cnVideoContainer()}>
-                                    <Video number={1}/>
-                                    <Video number={2}/>
-                                    <Video number={3}/>
-                                    <Video number={4}/>
-                                </div>
+                                <Container />
                             </div>
                             <Footer className={cnVideoPage('Footer')}/>
                         </div>

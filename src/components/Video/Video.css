@@ -10,10 +10,8 @@
     grid-row-gap: 10px;
     z-index: 100;
 }
-.Video_full .Video-Controls {
-    display: grid;
-    grid-template-columns: repeat(3, min-content);
-    grid-gap: 20px;
+.Video-Controls {
+    display: none;
 }
 
 .Video-Controls_range {

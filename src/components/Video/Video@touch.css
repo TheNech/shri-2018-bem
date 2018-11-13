@@ -6,6 +6,7 @@
     height: 100%;
 }
 .Video_full .Video-Controls {
+    display: grid;
     grid-template-columns: repeat(1, min-content);
     grid-gap: 10px;
 }
