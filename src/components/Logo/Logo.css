@@ -1,0 +1,9 @@
+.Logo {
+    display: inline-block;
+
+    height: 27px;
+    width: 108px;
+
+    background: url(./Яндекс\ Дом@1x.png) no-repeat;
+    background-size: contain;
+}

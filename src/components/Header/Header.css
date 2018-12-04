@@ -1,0 +1,11 @@
+.Header {
+    width: 100%;
+    display: flex;
+}
+
+.Header-Menu *:focus,.Header-Menu *::before,.Header-Menu *::after {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: content-box;
+}

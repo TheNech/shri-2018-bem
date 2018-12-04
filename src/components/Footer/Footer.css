@@ -1,0 +1,23 @@
+.Footer {
+    border-top: 1px solid #F0F0F0;
+    /* height: 63px; */
+    /* width: 100%; */
+    padding: 21px 3% 28px;
+    position: relative;
+}
+
+.Footer-Link {
+    font-size: 12px;
+    color: #858585;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.Footer-Link_isFirst {
+    margin-left: 0;
+}
+.Footer-Company {
+    font-size: 12px;
+    color: #858585;
+    position: absolute;
+    right: 3%;
+}

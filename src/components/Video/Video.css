@@ -1,0 +1,45 @@
+.Video {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.Video_full {
+    position: absolute;
+    display: grid;
+    grid-template-rows: auto min-content;
+    grid-row-gap: 10px;
+    z-index: 100;
+}
+.Video-Controls {
+    display: none;
+}
+
+.Video-Controls_range {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    grid-column-gap: 5px;
+}
+
+.Video-Back {
+    display: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #000000;
+    background: #FFD93E;
+    padding: 5px;    
+}
+.Video-Back:hover {
+    cursor: pointer;
+    background: rgb(235, 192, 20);
+}
+.Video_full .Video-Back {
+    display: block;
+    position: absolute;
+}
+
+.Video-Volume_line {
+    width: 250px;
+    background: #FFD93E;
+    height: 100%;
+}
