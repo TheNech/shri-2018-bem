@@ -1,15 +1,6 @@
 const assert = require('chai').assert;
 
 describe('github', function() {
-    it('should find hermione', function() {
-        return this.browser
-            .url('https://github.com/gemini-testing/hermione')
-            .waitForVisible('#readme')
-            .pause(2000)
-            .assertView('readme', '#readme', {
-                allowViewportOverflow: true
-            });
-    });
 
     it('should find hermione title', function() {
         return this.browser
@@ -30,18 +21,5 @@ describe('github', function() {
                 assert.equal(title, 'Hermione')
             });
  
-    });
-
-    it ('should take part of view', function() {
-        return this.browser
-            .url('https://github.com/gemini-testing/hermione')
-            .waitForVisible('body')
-            .execute(() => {
-                window.scrollTo(0, 5000);
-            })
-            .pause(2000)
-            .assertView('body', 'body', {
-                allowViewportOverflow: true
-            });
     });
 });
