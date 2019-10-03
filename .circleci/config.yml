@@ -8,7 +8,7 @@ jobs:
       - checkout
 
       - run: npm install
-
+      
       - run: npm install selenium-standalone@latest -g
       - run: selenium-standalone install && selenium-standalone start > selenium.txt 2>&1 </dev/null &
 
