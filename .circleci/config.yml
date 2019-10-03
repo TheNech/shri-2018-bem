@@ -2,6 +2,7 @@ version: 2
 jobs:
   build:
     docker:
+      - image: circleci/node:8.6.0
       - image: circleci/node:jessie-browsers
 
     steps:
@@ -11,10 +12,10 @@ jobs:
 
       - run:
           name: Download Selenium
-          command: curl -O http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
+          command: sudo npm install selenium-standalone@latest -g
       - run:
           name: Start Selenium
-          command: java -jar selenium-server-standalone-3.5.3.jar -log test-reports/selenium.log
+          command: selenium-standalone install && selenium-standalone start
           background: true
 
       - run: npm test
