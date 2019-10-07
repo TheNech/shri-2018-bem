@@ -30,6 +30,6 @@
   ],
   "devDependencies": {
     "hermione": "^2.12.6",
-    "hermione-headless-chrome": "0.0.1"
+    "hermione-headless-chrome": "0.0.2"
   }
 }

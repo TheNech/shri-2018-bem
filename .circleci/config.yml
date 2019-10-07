@@ -1,15 +1,24 @@
 version: 2
 jobs:
-  build:
+  test:
     docker:
-      - image: circleci/node:7.10
+      - image: circleci/node:8.6.0-browsers
 
     steps:
       - checkout
 
       - run: npm install
 
-      - run: npm install selenium-standalone@latest -g
-      - run: selenium-standalone install && selenium-standalone start > selenium.txt 2>&1 </dev/null &
+      - run:
+          name: Download Selenium
+          command: sudo npm install selenium-standalone@latest -g
+      - run:
+          name: Start Selenium
+          command: selenium-standalone install && selenium-standalone start
+          background: true
 
       - run: npm test
+
+      - store_artifacts:
+          path: html-report/
+          destination: /html-reporter
