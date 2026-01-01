@@ -11,7 +11,7 @@
     "html-reporter": "^4.12.3",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
-    "react-scripts": "2.1.1"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,7 +29,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "hermione": "^2.12.6",
+    "hermione": "^8.9.6",
     "hermione-headless-chrome": "0.0.1"
   }
 }
